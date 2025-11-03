@@ -1,0 +1,181 @@
+.body {
+    height: auto;
+    background-color: #635B5B;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.body .left-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.body .left-section div {
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.body .right-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+.body .left-section h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #e3b9a3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #FFC4AC;
+}
+
+.body .left-section .opleidingen,
+.body .left-section .vaardigheden,
+.body .left-section .talenkennis {
+    background-color: rgba(255, 196, 172, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+.talenkennis .taal {
+    margin-bottom: 10px;
+}
+
+.talenkennis .taal span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.talenkennis .bar {
+    width: 100%;
+    height: 12px;
+    background-color: rgba(255, 196, 172, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.talenkennis .bar-level {
+    height: 100%;
+    background-color: #FFC4AC;
+    border-radius: 8px 0 0 px;
+}
+
+.body .right-section h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background-color: #4d4646;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #FFC4AC;
+}
+
+.body .right-section span {
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.location {
+    margin-top: -20px;
+    font-size: 0.9rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: #4d4646;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #FFC4AC;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio span {
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.portfolio {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.portfolio h2:hover {
+    color: #FFC4AC;
+    cursor: pointer;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.portfolio-images img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.portfolio h3 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    background-color: #4d4646;
+    margin-bottom: 0px;
+    color: #FFC4AC;
+    width: 100%;
+    text-align: center;
+    border-bottom: #FFC4AC solid 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.portfolio h2 {
+    margin-top: auto;
+}
+
+.portfolio-header button {
+    padding: 8px 16px;
+    background-color: #FFC4AC;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #FFC4AC;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #4d4646;
+}

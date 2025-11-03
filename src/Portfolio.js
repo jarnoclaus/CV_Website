@@ -1,0 +1,47 @@
+import './Body.css'
+import './Page.css'
+import { useState } from 'react'
+import Lijstje from './images/Lijstje.jpg'
+import Afgestreept from './images/Afgestreept.jpg'
+import Popup from './images/popup.jpg'
+import Producten from './images/Producten.jpg'
+
+export default function Portfolio({ button }) {
+    const [showProject1, setShowProject1] = useState(true)
+    const [showProject2, setShowProject2] = useState(false)
+    return (
+        <div className='body page portfolio'>
+            <div className='portfolio-header'>
+                <h1>Portfolio - Projects</h1>
+                {button}
+            </div>
+            <h2 onClick={() => setShowProject1(!showProject1)}>.NET MAUI - Shoppinglist  {showProject1 ? "▲" : "▼"} <span>(Eigen project, In development)</span></h2>
+            {showProject1 && (
+                <>
+                    <div className='portfolio-images'>
+                        <img src={Lijstje} alt='Lijstje' />
+                        <img src={Afgestreept} alt='Afgestreept' />
+                        <img src={Popup} alt='Popup' />
+                        <img src={Producten} alt='Producten' />
+                    </div>
+                    <h3>Doel <span></span></h3>
+                    <p>Eerste kennismaking met .NET MAUI.<br />
+                        Het doel van dit project is het ontwikkelen van een interactieve boodschappenlijst-applicatie met .NET MAUI.
+                        De app stelt gebruikers in staat om een lijst met producten (inclusief prijzen) te bekijken en items aan hun actieve boodschappenlijst toe te voegen door erop te klikken.
+                        De boodschappenlijst wordt automatisch gesorteerd volgens de indeling van de winkel voor een efficiënte winkelervaring.
+                        Een belangrijke uitdaging van dit project is het implementeren van realtime cloud-synchronisatie, waardoor samenwerking tussen gebruikers,
+                        zoals het delen van de boodschappenlijst met een partner, mogelijk wordt.</p>
+                </>
+            )}
+            <h2 onClick={() => setShowProject2(!showProject2)}>Javascript React {showProject2 ? "▲" : "▼"}<span>(Opleiding, In development)</span></h2>
+            {showProject2 && (
+                <>
+                    <h3>Doel</h3>
+                    <p>Eerste kennismaking met React. <br />
+                        Het doel van dit project is het ontwikkelen van een eenvoudige webapplicatie met React als front-end.
+                        Voor de back-end wordt gebruikgemaakt van .NET Web API in combinatie met Entity Framework Core.</p>
+                </>
+            )}
+        </div>
+    );
+}
