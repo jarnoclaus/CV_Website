@@ -9,6 +9,8 @@ import Producten from './images/Producten.jpg'
 export default function Portfolio({ button }) {
     const [showProject1, setShowProject1] = useState(true)
     const [showProject2, setShowProject2] = useState(false)
+    const [showProject3, setShowProject3] = useState(false)
+
     return (
         <div className='body page portfolio'>
             <div className='portfolio-header'>
@@ -42,6 +44,27 @@ export default function Portfolio({ button }) {
                         Voor de back-end wordt gebruikgemaakt van .NET Web API in combinatie met Entity Framework Core.</p>
                 </>
             )}
+            <h2 onClick={() => setShowProject3(!showProject3)}>Scrum Project {showProject3 ? "▲" : "▼"}<span>(Opleiding, project afgerond 8/12/2025)</span></h2>
+            {showProject3 && (
+                <>
+                    <h3>Doel</h3>
+                    <p>
+                        Eerste kennismaking met de SCRUM-methode.<br />
+                        Dit Scrumproject bestond uit vier teams: verkoop, aankoop, magazijn en webshop. Ik maakte deel uit van het team verkoop.
+                        Hieronder schets ik kort onze opdracht aan de hand van een user story.
+                        <div className='cursive'>
+                            <i>
+                                "Als medewerker van de klantendienst wil ik bij het inloggen een overzicht krijgen van alle bestellingen, met de mogelijkheid tot filtering, sortering en paginering,
+                                evenals een overzicht van alle klanten. Zo kan ik klanten snel en efficiënt helpen wanneer zij telefonisch contact opnemen."
+                            </i>
+                        </div>
+                        Dit project omvatte uiteraard veel meer dan enkel de ontwikkeling zelf, zoals het opstellen van user stories, sprinttaken, sprintplanningen en sprintretrospectives.
+                        Binnen het team verkoop was ik, als onderdeel van pair programming, verantwoordelijk voor het implementeren van de filtering, sortering en paginering van beide overzichten.
+                    </p>
+                </>
+            )}
         </div>
     );
 }
+
+

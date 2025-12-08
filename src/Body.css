@@ -179,3 +179,9 @@ button {
     font-size: 1.5rem;
     color: #4d4646;
 }
+
+.cursive {
+    margin: 20px;
+    color: #e6bfb0;
+    font-weight: 700;
+}
