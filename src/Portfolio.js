@@ -5,6 +5,7 @@ import Lijstje from './images/Lijstje.jpg'
 import Afgestreept from './images/Afgestreept.jpg'
 import Popup from './images/popup.jpg'
 import Producten from './images/Producten.jpg'
+import ScrumProject from './images/Bestellingen.png'
 
 export default function Portfolio({ button }) {
     const [showProject1, setShowProject1] = useState(true)
@@ -47,6 +48,9 @@ export default function Portfolio({ button }) {
             <h2 onClick={() => setShowProject3(!showProject3)}>Scrum Project {showProject3 ? "▲" : "▼"}<span>(Opleiding, project afgerond 8/12/2025)</span></h2>
             {showProject3 && (
                 <>
+                    <div className='portfolio-images bestellingen'>
+                        <img src={ScrumProject} alt='Bestellingen overzicht' />
+                    </div>
                     <h3>Doel</h3>
                     <p>
                         Eerste kennismaking met de SCRUM-methode.<br />
@@ -60,6 +64,11 @@ export default function Portfolio({ button }) {
                         </div>
                         Dit project omvatte uiteraard veel meer dan enkel de ontwikkeling zelf, zoals het opstellen van user stories, sprinttaken, sprintplanningen en sprintretrospectives.
                         Binnen het team verkoop was ik, als onderdeel van pair programming, verantwoordelijk voor het implementeren van de filtering, sortering en paginering van beide overzichten.
+                        <p>
+                            De gebruiker kan meerdere filters tegelijk combineren en daarnaast sorteren op elke kolomheader, zowel oplopend als aflopend. Bovendien kan het gewenste aantal bestellingen per pagina worden ingesteld.
+                            Het paginanummer kan worden gewijzigd via de navigatieknoppen of door rechtstreeks op het huidige paginanummer te klikken en handmatig een nieuw nummer in te voeren.
+                            Wanneer een gebruiker een bestelling opent en vervolgens terugkeert naar het overzicht, blijven alle toegepaste filters, de sorteervolgorde en de huidige pagina behouden.
+                        </p>
                     </p>
                 </>
             )}

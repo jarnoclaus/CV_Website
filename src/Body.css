@@ -185,3 +185,14 @@ button {
     color: #e6bfb0;
     font-weight: 700;
 }
+
+.bestellingen img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.bestellingen img:hover {
+    transform: scale(1.15);
+}
