@@ -196,3 +196,17 @@ button {
 .bestellingen img:hover {
     transform: scale(1.15);
 }
+
+.portfolio-javascript-project a {
+    color: #e6bfb0;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.portfolio-javascript-project a:hover {
+    font-size: large;
+}
+
+.portfolio-javascript-project {
+    margin: 10px;
+}

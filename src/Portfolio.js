@@ -39,6 +39,11 @@ export default function Portfolio({ button }) {
             <h2 onClick={() => setShowProject2(!showProject2)}>Javascript React {showProject2 ? "▲" : "▼"}<span>(Opleiding, In development)</span></h2>
             {showProject2 && (
                 <>
+                    <div className='portfolio-javascript-project'>
+                        <p>Live demo: <i><a href='https://jarnoclaus.github.io/psychology_office_Frontend/'>Live website</a></i></p>
+                        <p>Frontend code: <i><a href='https://github.com/jarnoclaus/psychology_office_Frontend'>Github repository</a></i></p>
+                        <p>Backend code: <i><a href='https://github.com/jarnoclaus/PsychologyOffice'>Github repository</a></i></p>
+                    </div>
                     <h3>Doel</h3>
                     <p>Eerste kennismaking met React. <br />
                         Het doel van dit project is het ontwikkelen van een eenvoudige webapplicatie met React als front-end.
