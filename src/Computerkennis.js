@@ -10,6 +10,8 @@ export default function Computerkennis() {
                 <li>SQL Server Management Studio</li>
                 <li>GitHub</li>
                 <li>Postman</li>
+                <li>Render</li>
+                <li>Neon PostgreSQL</li>
             </ul>
             <h3>Microsoft 365</h3>
             <ul>
