@@ -134,6 +134,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+    justify-content: center;
 }
 
 .portfolio-images img {
@@ -186,27 +187,35 @@ button {
     font-weight: 700;
 }
 
+.bestellingen {
+    display: flex;
+    justify-content: center;
+}
+
 .bestellingen img {
-    width: 80%;
+    width: 100%;
+    max-width: 1000px;
     height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 .bestellingen img:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
 }
 
 .portfolio-javascript-project a {
     color: #e6bfb0;
     font-weight: 700;
     text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    margin-left: 4px;
 }
 
 .portfolio-javascript-project a:hover {
-    font-size: large;
+    transform: scale(1.10);
 }
 
-.portfolio-javascript-project {
-    margin: 10px;
+.portfolio-javascript-project li {
+    margin-top: 10px;
+    list-style-type: none;
 }
