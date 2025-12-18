@@ -25,6 +25,7 @@ export default function Header() {
                     9160 Lokeren
                 </p>
                 <p><img src={driving} alt='driving license' />Rijbewijs B</p>
+                <p>Online CV: <a href='https://jarnoclaus.github.io/CV_Website/'>https://jarnoclaus.github.io/CV_Website/</a></p>
             </div>
         </header >
     )

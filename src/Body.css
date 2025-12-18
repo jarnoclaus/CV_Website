@@ -34,6 +34,11 @@
     box-sizing: border-box;
 }
 
+.right-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .body .left-section h2 {
     text-transform: uppercase;
     font-size: 1.1rem;
